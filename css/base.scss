@@ -1,0 +1,132 @@
+body { font-family: 'Ubuntu', sans-serif; padding: 0; margin: 0; float: left; width: 100%; }
+
+div.container { max-width: 1200px; padding: 0 30px; margin: 0 auto; }
+
+.shrink { padding: 20px 0; background-color: rgba(0,0,0,0.6); transition: .15s; }
+
+nav { float: left; width: 100%; position: fixed; padding: 50px 0; z-index: 100; transition: .15s;
+
+    h1 { color: #fff; font-weight: 300; float: left; margin: 4px 0 0 0;
+    
+        span { color: orangered; }
+    
+    }
+    
+    ul.navigation { float: right; list-style-type: none; margin: 0; padding: 0;
+    
+        li { margin: 0 10px 0 0; padding: 0; display: inline-block; 
+        
+            a { color: #fff; font-size: 14px; text-decoration: none; display: block; padding: 10px; transition: .15s;
+            
+                &:hover { color: orangered; transition: .15s; }
+            
+            }
+        
+            &:last-of-type { margin: 0; }
+            
+        }
+    
+    }
+    
+    i.fa.fa-bars { color: #fff; float: right; cursor: pointer; display: none; margin: 11px 0 0 0; }
+    
+    @media all and (max-width:800px){
+        
+        ul.navigation { display: none; }
+        
+        i.fa.fa-bars { display: block; }
+        
+    }
+
+}
+
+header { float: left; width: 100%; height: 100vh; background-image: url(../img/header-bg.jpg); background-position: 50% 0;
+    background-size: cover; position: relative;
+
+    div.header-content { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60%; text-align: center;
+    
+        h3 { color: #fff; font-size: 50px; font-weight: 300; margin: 100px 0 0 0;
+        
+            span { color: orangered; }
+            
+            @media all and (max-width:800px){ font-size: 30px; margin: 0; }
+        
+        }
+    
+    }
+
+}
+
+div.work-section { float: left; width: 100%; background-color: #666;
+
+    div.work { float: left; max-width: 25%; position: relative;
+        
+        @media all and (max-width:1000px){ max-width: 50%;
+        
+            &.five, &.six, &.seven, &.eight { display: none; }   
+        
+        }
+        
+        @media all and (max-width:700px){ max-width: 100%;
+        
+            &.three, &.four { display: none; }
+        
+        }
+        
+        img.work-image { max-width: 100%; }
+    
+        div.work-inner { opacity: 0; transition: .15s; height: 100%; width: 100%; position: absolute; top: 50%; left: 50%; 
+            transform: translate(-50%, -50%); background: rgba(0,0,0,0.5); text-align: center; color: #fff; }
+        
+        &:hover > div.work-inner { opacity: 1; transition: .15s; }
+    
+    }
+
+}
+
+div.text-section { float: left; width: 100%; background: #1c1c1c; padding: 100px 0; text-align: center;
+
+    div.text-block { display: inline-block; max-width: 25%; margin: 0 7% 0 0; text-align: left;
+        
+        @media all and (max-width:900px){ width: 100%; max-width: 100%; }
+        
+        &:last-of-type { margin: 0; }
+    
+        h3 { color: #fff; font-weight: 300; font-size: 16px; }
+        div.underline { width: 50%; height: 1px; background: orangered; }
+        
+        p { color: rgba(255,255,255,0.4); font-size: 14px; line-height: 1.5; letter-spacing: 1px; }
+    
+    }
+
+}
+
+footer { float: left; width: 100%; padding: 20px 0; background-color: orangered; text-align: center; color: #1c1c1c; font-size: 12px;
+
+    p.copy { display: inline-block; float: left; margin: 0; color: rgba(0,0,0,0.6); }
+    
+    ul.footer-nav { display: inline-block; margin: 0; float: right; padding: 0;
+    
+        li { display: inline-block; margin: 0; margin-right: 10px;
+            
+            &:last-of-type { margin-right: 0; }
+        
+            a { color: rgba(0,0,0,0.6); text-decoration: none;
+            
+                &:hover { color: rgba(0,0,0,1); }
+            
+            }
+        
+        }
+    
+    }
+    
+    @media all and (max-width:700px){ text-align: center;
+    
+        p.copy, ul.footer-nav { float: none; display: block; }
+        
+        p.copy { margin-bottom: 10px; }
+    
+    }
+
+}
