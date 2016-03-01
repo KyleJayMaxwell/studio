@@ -154,6 +154,8 @@
     <footer>
     
         <div class="container">
+            
+            <div class="footer-border"></div>
         
             <p class="copy">&copy; <?php echo date("Y"); ?> STUDIO 219</p>
             

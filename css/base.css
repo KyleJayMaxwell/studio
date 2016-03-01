@@ -159,16 +159,21 @@ div.text-section {
 footer {
   float: left;
   width: 100%;
-  padding: 20px 0;
-  background-color: orangered;
+  padding: 0 0 20px 0;
+  background-color: #1c1c1c;
   text-align: center;
   color: #1c1c1c;
   font-size: 12px; }
+  footer div.footer-border {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5);
+    margin-bottom: 20px; }
   footer p.copy {
     display: inline-block;
     float: left;
     margin: 0;
-    color: rgba(0, 0, 0, 0.6); }
+    color: rgba(255, 255, 255, 0.5); }
   footer ul.footer-nav {
     display: inline-block;
     margin: 0;
@@ -181,10 +186,12 @@ footer {
       footer ul.footer-nav li:last-of-type {
         margin-right: 0; }
       footer ul.footer-nav li a {
-        color: rgba(0, 0, 0, 0.6);
-        text-decoration: none; }
+        color: rgba(255, 255, 255, 0.5);
+        text-decoration: none;
+        transition: .15s; }
         footer ul.footer-nav li a:hover {
-          color: black; }
+          color: white;
+          transition: .15s; }
   @media all and (max-width: 700px) {
     footer {
       text-align: center; }

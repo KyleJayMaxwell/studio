@@ -101,9 +101,11 @@ div.text-section { float: left; width: 100%; background: #1c1c1c; padding: 100px
 
 }
 
-footer { float: left; width: 100%; padding: 20px 0; background-color: orangered; text-align: center; color: #1c1c1c; font-size: 12px;
+footer { float: left; width: 100%; padding: 0 0 20px 0; background-color: #1c1c1c; text-align: center; color: #1c1c1c; font-size: 12px;
 
-    p.copy { display: inline-block; float: left; margin: 0; color: rgba(0,0,0,0.6); }
+    div.footer-border { width: 100%; height: 1px; background: rgba(255,255,255,0.5); margin-bottom: 20px; }
+    
+    p.copy { display: inline-block; float: left; margin: 0; color: rgba(255,255,255,0.5); }
     
     ul.footer-nav { display: inline-block; margin: 0; float: right; padding: 0;
     
@@ -111,9 +113,9 @@ footer { float: left; width: 100%; padding: 20px 0; background-color: orangered;
             
             &:last-of-type { margin-right: 0; }
         
-            a { color: rgba(0,0,0,0.6); text-decoration: none;
+            a { color: rgba(255,255,255,0.5); text-decoration: none; transition: .15s;
             
-                &:hover { color: rgba(0,0,0,1); }
+                &:hover { color: rgba(255,255,255,1); transition: .15s; }
             
             }
         
